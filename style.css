@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+
+/* Header */
+
+header {
+    background-color: rgba(255, 144, 53, 0.64);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+/* Introduction */
+
+.intro {
+    background-image: url('img1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.2)), url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro h1 {
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #3333337e;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+/* Coding languages */
+
+.coding-languages-wrapper {
+    position: absolute;
+    /* lisätään absolute position, jotta elementit voidaan asettaa alareunaan */
+    bottom: 0;
+    /* asetetaan alareunaan */
+    left: 0;
+    /* asetetaan vasempaan reunaan */
+    width: 100%;
+    /* laajennetaan elementin leveyden koko sivulle */
+    display: flex;
+    /* lisätään flexbox */
+    justify-content: center;
+    /* keskitetään elementit vaakasuunnassa */
+    align-items: center;
+    /* keskitetään elementit pystysuunnassa */
+    background-color: none;
+    /* taustaväri */
+}
+
+.coding-language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+    /* lisätään väli elementtien väliin */
+}
+
+.coding-language img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.coding-language h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.coding-language p {
+    text-align: center;
+}
+
+
+/*Projects*/
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    padding: 40px;
+    width: calc(100% - 80px);
+    scroll-behavior: smooth;
+    margin-bottom: -1px;
+}
+
+.project {
+    flex: 0 0 auto;
+    flex-basis: calc((100% - 90px) / 3);
+    /* kolme elementtiä */
+    width: calc((100% - 60px) / 3);
+    /* kolme elementtiä */
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project:hover img {
+    opacity: 0.7;
+}
+
+.projects h2 {
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #49e921;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.controls button:hover {
+    background-color: rgb(255, 144, 53);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+
+/*.carousel::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1rem;
+}
+*/
+
+
+/*Contact*/
+
+.contact {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.contact h2 {
+    font-size: 2.4rem;
+}
+
+.contact-container {
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+    margin-bottom: 150px;
+}
+
+.contact-container h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.contact-container p {
+    font-size: 1rem;
+}
+
+.contact-container a {
+    color: #333;
+    size: 20px;
+    text-decoration: NONE;
+}
+
+.contact-container i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: orange;
+}
+
+.contact-container i:hover {
+    color: orangered
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(255, 144, 53);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+    color: rgb(18, 255, 101);
+}
+
+.scroll-to-top {
+    position: absolute;
+    left: 92%;
+    margin-bottom: 260px;
+    font-size: 60px;
+}
+
+.scroll-to-top a {
+    color: black;
+}
