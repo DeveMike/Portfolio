@@ -37,6 +37,8 @@ nav {
     padding: 20px 0;
 }
 
+
+
 .logo a {
     font-size: 1.5rem;
     color: white;
@@ -169,8 +171,13 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+   
 }
+
+
+
+
 
 .project:hover {
     transform: translateY(-10px);
@@ -256,7 +263,23 @@ nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #f9f9f9;
     margin-bottom: 150px;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 .contact-container h3 {
     font-size: 1.2rem;
@@ -332,3 +355,56 @@ footer {
 .scroll-to-top a {
     color: rgb(98, 225, 43);
 }
+
+
+
+/* Puhelin */
+@media only screen and (max-width: 600px) {
+    .intro h1 {
+      font-size: 2.5rem;
+    }
+    .intro p {
+      font-size: 1rem;
+      margin-bottom: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+      padding: 10px;
+    }
+    .nav-links {
+      display: none;
+      width: 100%;
+    }
+    .nav-links li {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .nav-links a {
+      font-size: 1.2rem;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: white;
+    }
+    header {
+      height: 8%;
+    }
+
+    
+  }
+  
+  
+  /* Tabletti */
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .intro h1 {
+      font-size: 3rem;
+    }
+    .intro p {
+      font-size: 1.2rem;
+      margin-bottom: 150px;
+      margin-right: 50px;
+      margin-left: 50px;
+      padding: 15px;
+    }
+  }
