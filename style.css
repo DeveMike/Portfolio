@@ -342,6 +342,10 @@ footer {
     color: rgb(18, 255, 101);
 }
 
+.credits p{
+    color: black;
+}
+
 .scroll-to-top {
     position: absolute;
     left: 92%;
