@@ -6,6 +6,20 @@ const nextBtn = document.querySelector('.next');
 let scrollAmount = 0;
 let projectWidth = carousel.querySelector('.project').clientWidth;
 
+function checkControls() {
+  if (scrollAmount === 0) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+
+  if (scrollAmount + carousel.clientWidth === carousel.scrollWidth) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}
+
 nextBtn.addEventListener('click', function() {
   carousel.scrollBy({
     left: projectWidth,
@@ -25,4 +39,5 @@ prevBtn.addEventListener('click', function() {
   scrollAmount -= projectWidth;
   checkControls();
 });
+
 
