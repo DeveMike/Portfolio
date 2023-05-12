@@ -26,10 +26,3 @@ prevBtn.addEventListener('click', function() {
   checkControls();
 });
 
-    
-
-
-
-
-
-    
