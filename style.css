@@ -185,7 +185,6 @@ nav {
     width: calc(100% - 80px);
     scroll-behavior: smooth;
     margin-bottom: -1px;
-    box-sizing: border-box;
 }
 
 .project, .project3, .project4 {
@@ -581,6 +580,7 @@ footer {
         padding: 40px 20px;
         width: calc(100% - 35px);
         backface-visibility: hidden;
+        box-sizing: border-box;
     }
 
     .project {
