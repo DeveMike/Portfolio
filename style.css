@@ -539,79 +539,76 @@ footer {
     color: rgb(98, 225, 43);
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
-  
+
+
     .nav-links {
         display: none;
-      }
-
+    }
 
     .intro h1 {
-       font-size: 20px;
+        font-size: 20px;
     }
     .intro p {
-     font-size: 14px;
-     margin: 9px ;
+        font-size: 14px;
+        margin: 9px ;
     }
 
-   /* Tämä on puhelinversio */
+    /* Tämä on puhelinversio */
 
-.coding-languages-wrapper {
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    bottom: 90px;
-  }
-  .coding-language {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-  }
-  .coding-language img {
-   width: 50px;
-   margin: 5px
-  }
+    .coding-languages-wrapper {
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        bottom: 90px;
+    }
+    .coding-language {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .coding-language img {
+        width: 50px;
+        margin: 5px
+    }
 
-  .coding-language h3 {
-    font-size: 0.8rem;
-    margin-bottom: 0px;
+    .coding-language h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+    .carousel {
+        padding: 40px 20px;
+        width: calc(100% - 35px);
+        backface-visibility: hidden;
+    }
+
+    .project {
+        flex-basis: calc(100% / 1);
+        margin: 0 15px;
+        max-width: 100%;
+    }
+
+    .projects h2 {
+        padding: 10px;
+    }
+
+    .contact-container {
+        max-width: 300px;
+        border-radius: 30px;
+    }
+
+    .contact {
+        margin-top: 100px;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .scroll-to-top {
+        left: 80%;
+    }
+
 }
-.carousel {
-    padding: 40px 20px;
-    width: calc(100% - 35px);
-    backface-visibility: hidden;
-}
-
-.project {
-    flex-basis: calc(100% / 1);
-    margin: 0 15px;
-    max-width: 100%;
-
-
-.projects h2 {
-    padding: 10px;
-}
-
-.contact-container {
-    max-width: 300px;
-    border-radius: 30px;
-}
-
-.contact {
-    margin-top: 100px;
-}
-
-.footer-links a {
-    font-size: 0.8rem;
-    text-decoration: none;
-    letter-spacing: 1px;   
-}
-
-
-
-.scroll-to-top {
-    left: 82%;
-}
-
-}}
