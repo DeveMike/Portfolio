@@ -185,6 +185,7 @@ nav {
     width: calc(100% - 80px);
     scroll-behavior: smooth;
     margin-bottom: -1px;
+    box-sizing: border-box;
 }
 
 .project, .project3, .project4 {
