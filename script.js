@@ -41,3 +41,50 @@ prevBtn.addEventListener('click', function() {
 });
 
 
+
+
+
+document.querySelectorAll('.project2').forEach(function (project) {
+  project.addEventListener('click', function () {
+    this.classList.toggle('show-video');
+    var video = this.querySelector('video');
+    if (this.classList.contains('show-video')) {
+      video.play();
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+    } else {
+      video.pause();
+      video.currentTime = 0;
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var project3_3 = document.querySelector('.project3:nth-of-type(3)');
+  
+  project3_3.addEventListener('click', function () {
+    window.open('artb.pdf', '_blank');
+  });
+});
+
+
+
+
+
+
