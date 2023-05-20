@@ -84,6 +84,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const waveElement = document.querySelector('.wave-effect');
+
+let waveOffset = 0;
+let waveSpeed = 0.05; // Säädä aallon nopeutta tarpeen mukaan
+
+function waveAnimation() {
+  waveOffset += waveSpeed;
+  const waveTransform = `translateY(${Math.sin(waveOffset) * 10}px)`;
+  waveElement.style.transform = waveTransform;
+  
+  requestAnimationFrame(waveAnimation);
+}
+
+waveAnimation();
+
+
 
 
 
