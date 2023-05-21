@@ -77,16 +77,18 @@ header {
     width: 70px;
     height: 50px;
     z-index: -1;
-    animation: fishSwim 13s linear infinite;
+    animation: fishSwim 10s linear infinite;
+    animation-delay: -5s; /* Pidä kalat animaation ulkopuolella ensimmäiset 5 sekuntia */
   }
   
-  
   .fish:nth-child(2) {
-    animation-delay: 5s; /* Toinen kala aloittaa 1 sekunnin viiveellä */
+    left: calc(50% + 100px); /* Toinen kala aloittaa 50% headerin leveydestä + 100px väli */
+    animation-delay: -1s; /* Toinen kala aloittaa 1 sekunnin viiveellä */
   }
   
   .fish:nth-child(3) {
-    animation-delay: 3s; /* Kolmas kala aloittaa 2 sekunnin viiveellä */
+    left: calc(100% + 200px); /* Kolmas kala aloittaa 100% headerin leveydestä + 200px väli */
+    animation-delay: -3s; /* Kolmas kala aloittaa 3 sekunnin viiveellä */
   }
   
   @keyframes fishSwim {
@@ -97,6 +99,9 @@ header {
       left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
     }
   }
+  
+  
+
 
   
 

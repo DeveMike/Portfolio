@@ -100,10 +100,7 @@ function waveAnimation() {
 waveAnimation();
 
 
-
-
-
-
+§
 
 
 
