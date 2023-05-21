@@ -98,7 +98,3 @@ function waveAnimation() {
 }
 
 waveAnimation();
-
-
-
-
