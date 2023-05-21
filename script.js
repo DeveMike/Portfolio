@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var project3_3 = document.querySelector('.project3:nth-of-type(3)');
   
   project3_3.addEventListener('click', function () {
-    window.open('artb.pdf', '_blank');
+    window.open('docs/artb.pdf', '_blank');
   });
 });
 
