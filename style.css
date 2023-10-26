@@ -604,13 +604,11 @@ footer {
 
 
 
-      nav {
-        display: none; /* piilottaa navigoinnin */
+  
+    .nav-links {
+        display: none;
     }
-    .hamburger-icon {
-        display: block; /* näyttää hampurilaisikonin */
-    }
-    
+
     .intro h1 {
         font-size: 20px;
     }
