@@ -602,9 +602,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-
-
-  
     .nav-links {
         display: none;
     }
@@ -623,18 +620,18 @@ footer {
         padding: 10px; /* Pienennetty padding */
       }
       .coding-language {
-        width: 80px; /* Pienennetty leveys */
-        height: 120px; /* Pienennetty korkeus */
-        margin: 5px; /* Pienennetty marginaali */
+        width: 60px; /* Pienennetty leveys */
+        height: 50px; /* Pienennetty korkeus */
       }
       .coding-language img {
-        width: 80%; /* Pienennetty kuvan leveys */
+        width: 100%; /* Pienennetty kuvan leveys */
       }
 
     /* .coding-language h3 {
         font-size: 0.8rem;
         margin-bottom: 0px;
     } */
+
     .carousel {
         padding: 40px 20px;
         width: calc(100% - 35px);
