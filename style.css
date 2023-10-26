@@ -619,7 +619,7 @@ footer {
     /* Tämä on puhelinversio */
 
       .coding-languages-wrapper {
-        padding: 10px; /* Pienennetty padding */
+        padding: 0px; /* Pienennetty padding */
       }
       .coding-language {
         width: 60px; /* Pienennetty leveys */
