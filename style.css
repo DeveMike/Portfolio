@@ -139,8 +139,8 @@ nav {
 /* Introduction */
 
 .intro {
-    background-image: url('pic/img1.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.2)), url('pic/img1.jpg');
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 165, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('pic/img1.jpg');
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -151,6 +151,7 @@ nav {
     flex-direction: column;
     padding-top: 50px;
 }
+
 
 .intro h1 {
   background-color: #3333337e;
@@ -521,10 +522,6 @@ text-align: center;
     margin-top: 0;
 }
 
-.contact-container p {
-    font-size: 1rem;
-}
-
 .contact-container a {
     color: #333;
     size: 20px;
@@ -537,8 +534,16 @@ text-align: center;
     color: orange;
 }
 
-.contact-container i:hover {
-    color: orangered
+.contact-container .fab.fa-youtube:hover{
+  color: #ff0000;
+}
+
+.contact-container .fab.fa-github:hover{
+  color: black;
+}
+
+.contact-container .fab.fa-linkedin:hover{
+  color: #0077B5;
 }
 
 
@@ -560,24 +565,37 @@ footer {
 }
 
 .footer-links {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.footer-links li {
-    list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 12rem;
 }
 
 .footer-links a {
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-    letter-spacing: 1px;
+  color: beige;
 }
 
 .footer-links a:hover {
-    color: rgb(18, 255, 101);
+  color: orangered
+}
+
+.footer-links i {
+  font-size: 2rem;
+}
+
+.footer-links .fab.fa-youtube:hover{
+  color: #ff0000;
+}
+
+.footer-links .fab.fa-github:hover{
+  color: black;
+}
+
+.footer-links .fab.fa-linkedin:hover{
+  color: #0077B5;
+}
+.credits{
+  display: flex;
+  gap: 1rem;
 }
 
 .credits p{
@@ -657,10 +675,21 @@ footer {
         margin-top: 100px;
     }
 
-    .footer-links a {
-        font-size: 0.8rem;
-        text-decoration: none;
-        letter-spacing: 1px;
+    footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+    .footer-links {
+      gap: 3rem;
+    }
+
+    .credits{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .scroll-to-top {
