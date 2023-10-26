@@ -603,10 +603,14 @@ footer {
 @media screen and (max-width: 768px) {
 
 
-    .nav-links {
-        display: none;
-    }
 
+      nav {
+        display: none; /* piilottaa navigoinnin */
+    }
+    .hamburger-icon {
+        display: block; /* näyttää hampurilaisikonin */
+    }
+    
     .intro h1 {
         font-size: 20px;
     }
