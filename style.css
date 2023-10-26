@@ -161,6 +161,9 @@ nav {
 }
 
 .intro h1 {
+  background-color: #3333337e;
+  padding: 10px 10px;
+    border-radius: 20px;
     color: white;
     font-size: 3.5rem;
     text-align: center;
@@ -183,7 +186,7 @@ nav {
 .coding-languages-wrapper {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /* Lisätty rivitys */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -599,6 +602,8 @@ footer {
     color: rgb(98, 225, 43);
 }
 
+
+/* Tämä on puhelinversio */
 @media screen and (max-width: 768px) {
 
 
@@ -611,13 +616,13 @@ footer {
     }
     .intro p {
         font-size: 14px;
-        margin: 9px ;
+        margin: 9px;
     }
-
-    /* Tämä on puhelinversio */
 
       .coding-languages-wrapper {
         padding: 0px; /* Pienennetty padding */
+        position: relative;
+        top: 60px;
       }
       .coding-language {
         width: 60px; /* Pienennetty leveys */
