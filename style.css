@@ -70,28 +70,66 @@ header {
     width: 70px;
     height: 50px;
     z-index: -1;
-    animation: fishSwim 10s linear infinite;
-    animation-delay: -5s; /* Pidä kalat animaation ulkopuolella ensimmäiset 5 sekuntia */
-  }
-  
-  .fish:nth-child(2) {
-    left: calc(50% + 100px); /* Toinen kala aloittaa 50% headerin leveydestä + 100px väli */
-    animation-delay: -1s; /* Toinen kala aloittaa 1 sekunnin viiveellä */
-  }
-  
-  .fish:nth-child(3) {
-    left: calc(100% + 200px); /* Kolmas kala aloittaa 100% headerin leveydestä + 200px väli */
-    animation-delay: -3s; /* Kolmas kala aloittaa 3 sekunnin viiveellä */
-  }
-  
-  @keyframes fishSwim {
+    animation: fishSwim 20s linear infinite;
+}
+
+.fish:nth-child(1) {
+    left: 0%; /* Ei liikettä */
+    animation-delay: 0s; /* Ei viivettä */
+
+}
+
+.fish:nth-child(2) {
+    left: -12.5%; /* -100% / 8 = -12.5% */
+    animation-delay: -2.5s; /* 20s / 8 = 2.5s */
+
+}
+
+.fish:nth-child(3) {
+    left: -25%; /* -12.5% * 2 = -25% */
+    animation-delay: -5s; /* 2.5s * 2 = 5s */
+
+}
+
+.fish:nth-child(4) {
+    left: -37.5%; /* -12.5% * 3 = -37.5% */
+    animation-delay: -7.5s; /* 2.5s * 3 = 7.5s */
+
+}
+
+.fish:nth-child(5) {
+    left: -50%; /* -12.5% * 4 = -50% */
+    animation-delay: -10s; /* 2.5s * 4 = 10s */
+
+}
+
+.fish:nth-child(6) {
+    left: -62.5%; /* -12.5% * 5 = -62.5% */
+    animation-delay: -12.5s; /* 2.5s * 5 = 12.5s */
+
+}
+
+.fish:nth-child(7) {
+    left: -75%; /* -12.5% * 6 = -75% */
+    animation-delay: -15s; /* 2.5s * 6 = 15s */
+
+}
+
+.fish:nth-child(8) {
+    left: -87.5%; /* -12.5% * 7 = -87.5% */
+    animation-delay: -17.5s; /* 2.5s * 7 = 17.5s */
+
+}
+
+@keyframes fishSwim {
     0% {
-      left: -100%; /* Kalat alkavat ulkopuolelta näytön vasemmalta puolelta */
+        left: -100%; /* Kalat alkavat ulkopuolelta näytön vasemmalta puolelta */
     }
     100% {
-      left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
+        left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
     }
-  }
+}
+
 
 nav {
     display: flex;
@@ -139,7 +177,7 @@ nav {
 /* Introduction */
 
 .intro {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 165, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('pic/img1.jpg');
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 165, 0, 0.3)), radial-gradient(circle, rgba(9, 80, 147, 0.3), rgba(16, 82, 164, 0.3)), url('pic/img1.jpg');
 
     background-size: cover;
     background-position: center;
@@ -205,6 +243,8 @@ nav {
   color: white;
   text-align: center;
 } */
+
+
 
 
 .sticky-container {
