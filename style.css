@@ -178,7 +178,6 @@ nav {
 
 .intro {
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 165, 0, 0.3)), radial-gradient(circle, rgba(9, 80, 147, 0.3), rgba(16, 82, 164, 0.3)), url('pic/img1.jpg');
-
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -275,10 +274,10 @@ nav {
   /*Projects*/
   
   .projects h2 {
-      text-align: center;
-      font-size: 40px;
+    text-align: center;
+    font-size: 40px;
   }
-
+  
   .carousel {
     display: flex;
     overflow-x: scroll;
@@ -287,9 +286,9 @@ nav {
     width: calc(100% - 80px);
     scroll-behavior: smooth;
     margin-bottom: -1px;
-}
-
-.project, .project3, .project4 {
+  }
+  
+  .project, .project3, .project4 {
     flex: 0 0 auto;
     flex-basis: calc((100% - 90px) / 3);
     /* kolme elementtiä */
@@ -303,109 +302,125 @@ nav {
     transition: transform 0.3s ease-in-out; 
     position: relative;
     cursor: pointer;
-}
-
-
-.project:hover .taso {
-    visibility: visible;
-    opacity: 1;
   }
-
-
-.project:hover, .project3:hover, .project4:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-}
-
-.project img,
-.project3 img, .project4 img {
+  
+  
+  .project img,
+  .project3 img,
+  .project4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
-}
+  }
+  
+  
+  .project .overlay,
+  .project2 .overlay,
+  .project3 .overlay,
+  .project4 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .project .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project .overlay h3{
+    margin: 0;
+    padding-top: 8px;
+    font-size: 1.1em;
+    color: white;
+  }
+  .project .overlay p{
+    color: #f9f9f9;
+    font-size: 15px;
+    margin: 8px;
+    text-align: center;
+  }
+  .project .overlay a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project .overlay a img {
+    width: 70px;
+    height: 70px;
 
+  }
 
-
-.project2 {
-  flex: 0 0 auto;
-  flex-basis: calc((100% - 90px) / 3);
-  width: calc((100% - 60px) / 3);
-  height: 300px;
-  margin: 0 20px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  position: relative;
-  cursor: pointer;
-}
-
-.project2 .video-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.project2 .thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.project2 video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-  cursor: pointer;
-}
-
-.project2.show-video video {
-  display: block;
-}
-
-.project2:hover .overlay,
-.project3:hover .overlay,
-.project4:hover .overlay {
-  opacity: 1;
-}
-
-.project2 .overlay,
-.project3 .overlay,
-.project4 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.project2 .overlay p,
-.project3 .overlay p,
-.project4 .overlay p {
-  color: #fff;
-  font-size: 18px;
-}
-
+  .project2 {
+    flex: 0 0 auto;
+    flex-basis: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .project2 .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .project2 .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .project2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .project2.show-video video {
+    display: block;
+  }
 
   .project2:hover {
     transform: translateY(-10px);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-}
+  }
+  .project:hover, .project3:hover, .project4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  }
 
-.project4 .overlay {
+  .project2 .overlay p,
+  .project3 .overlay p,
+  .project4 .overlay p {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .project4 .overlay {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,57 +443,14 @@ nav {
     border-radius: 50%;
   }
   
-
-
-
-.taso {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .project:hover .overlay,
+  .project2:hover .overlay,
+  .project3:hover .overlay,
+  .project4:hover .overlay {
+    opacity: 1;
   }
-
-.taso h3{
-font-weight: 500;
-margin-bottom: 20px;;
-}
-
-.taso p{
-        text-align: center;
-     display: flex;
-        justify-content: center;
-        align-items: center;  
-}
-
-.taso a{
-
-color: #fff;
-text-decoration: none;
-font-size: 18px;
-line-height: 60px;
-width: 60px;
-height: 60px;
-border-radius: 10%;
-text-align: center;
-}
-
-.taso i{
-    font-size: 40px;
-}
-
-
-.controls {
+  
+  .controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -770,6 +742,11 @@ footer {
     flex-basis: calc(100% / 1);
     margin: 0 15px;
     max-width: 100%;
+}
+
+
+.project2 .overlay p, .project3 .overlay p {
+  font-size: 15px;
 }
 
     .contact-container {
