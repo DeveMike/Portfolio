@@ -70,7 +70,8 @@ header {
     width: 70px;
     height: 50px;
     z-index: -1;
-    animation: fishSwim 20s linear infinite;
+    animation: fishSwim 20s linear infinite, fishWiggle 7s linear infinite; /* Yhdistetty molemmat animaatiot */
+
 }
 
 .fish:nth-child(1) {
@@ -129,6 +130,22 @@ header {
         left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
     }
 }
+
+@keyframes fishWiggle {
+  0%, 100% {
+      transform: rotate(0deg); /* Aloitusasento */
+  }
+  25% {
+      transform: rotate(-20deg); /* Kala "kaartaa" vasemmalle */
+  }
+  50% {
+      transform: rotate(0deg); /* Palaa takaisin keskiasentoon */
+  }
+  75% {
+      transform: rotate(20deg); /* Kala "kaartaa" oikealle */
+  }
+}
+
 
 
 nav {
@@ -635,7 +652,7 @@ footer {
     width: 70px;
     height: 50px;
     z-index: -1;
-    animation: fishSwim 20s linear infinite;
+    animation: fishSwim 20s linear infinite, fishWiggle 7s linear infinite; /* Yhdistetty molemmat animaatiot */
 }
 
 .fish:nth-child(1) {
