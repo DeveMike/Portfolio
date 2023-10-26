@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
+    overflow-x: hidden; /* Piilottaa vaakasuuntaisen vierityksen, jos se johtuu pienestä ylivuodosta */
 }
 
 
@@ -602,6 +603,8 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+  
+
     .nav-links {
         display: none;
     }
@@ -625,6 +628,7 @@ footer {
       }
       .coding-language img {
         width: 100%; /* Pienennetty kuvan leveys */
+        height: 100%;
       }
 
     /* .coding-language h3 {
