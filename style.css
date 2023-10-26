@@ -13,12 +13,9 @@ body {
     background-color: antiquewhite;
 }
 
-
 /* Header */
-
 header {
-    background-color: #efd688b1;
-
+    background-color: rgba(255, 228, 196, 0.791);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,15 +25,12 @@ header {
     height: 10%;
     z-index: 1;
     border-radius: 0 0 10% 10%;
-  
 }
-
 .wave-effect {
     position: fixed;
     overflow: hidden;
 
 }
-
   .wave-effect::after {
     content: "";
     position: absolute;
@@ -46,9 +40,8 @@ header {
     height: 20px;
     background-color: transparent;
     transform: translateY(100%);
-    
   }
-  
+
   .wave-effect::before {
     content: "";
     position: absolute;
@@ -60,7 +53,7 @@ header {
     opacity: 0.2;
     animation: wave 4s infinite linear;
   }
-  
+
   @keyframes wave {
     0% {
       transform: translateY(100%);
@@ -100,7 +93,6 @@ header {
     }
   }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -109,10 +101,18 @@ nav {
     margin: auto;
     padding: 20px 0;
 }
+.logo-container {
+  display: flex;
+  align-items: center; /* Tämä asettaa logon ja tekstin samalle tasolle */
+}
 
+.logo {
+     width: 50px;  /* tai mikä tahansa haluamasi leveys */
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
-
-.logo a {
+.logo-text {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -136,8 +136,6 @@ nav {
     font-weight: bold;
 }
 
-
-
 /* Introduction */
 
 .intro {
@@ -151,7 +149,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    padding-top: 50px;
 }
 
 .intro h1 {
@@ -159,13 +157,13 @@ nav {
   padding: 10px 10px;
     border-radius: 20px;
     color: white;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .intro p {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-right: 100px;
     margin-left: 100px;
@@ -175,7 +173,6 @@ nav {
     padding: 15px;
 }
 
-
 /* Coding languages */
 .coding-languages-wrapper {
   width: 100%;
@@ -183,6 +180,8 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+
 }
 
 .coding-language {
@@ -190,7 +189,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   width: 100px;
   height: 150px;
   margin: 10px;
@@ -232,9 +231,14 @@ nav {
     text-decoration: underline;
   }
   
-/*Projects*/
+  /*Projects*/
+  
+  .projects h2 {
+      text-align: center;
+      font-size: 40px;
+  }
 
-.carousel {
+  .carousel {
     display: flex;
     overflow-x: scroll;
     margin-bottom: 50px;
@@ -432,11 +436,6 @@ text-align: center;
     font-size: 40px;
 }
 
-.projects h2 {
-    padding: 50px;
-    text-align: center;
-    font-size: 40px;
-}
 
 .controls {
     display: flex;
@@ -484,7 +483,7 @@ text-align: center;
 
 .contact {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .contact h2 {
@@ -614,7 +613,7 @@ footer {
     }
 
       .coding-languages-wrapper {
-        padding: 0px; 
+        padding: 0px;
         position: relative;
         top: 60px;
       }
@@ -648,11 +647,6 @@ footer {
     margin: 0 15px;
     max-width: 100%;
 }
-
-
-    .projects h2 {
-        padding: 10px;
-    }
 
     .contact-container {
         max-width: 300px;
