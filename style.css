@@ -658,6 +658,72 @@ footer {
 @media screen and (max-width: 768px) {
 
 
+  .fish {
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    z-index: -1;
+    animation: fishSwim 20s linear infinite;
+}
+
+.fish:nth-child(1) {
+    left: 0%; /* Ei liikettä */
+    animation-delay: 0s; /* Ei viivettä */
+
+}
+
+.fish:nth-child(2) {
+    left: -12.5%; /* -100% / 8 = -12.5% */
+    animation-delay: -2.5s; /* 20s / 8 = 2.5s */
+
+}
+
+.fish:nth-child(3) {
+    left: -25%; /* -12.5% * 2 = -25% */
+    animation-delay: -5s; /* 2.5s * 2 = 5s */
+
+}
+
+.fish:nth-child(4) {
+    left: -37.5%; /* -12.5% * 3 = -37.5% */
+    animation-delay: -7.5s; /* 2.5s * 3 = 7.5s */
+
+}
+
+.fish:nth-child(5) {
+    left: -50%; /* -12.5% * 4 = -50% */
+    animation-delay: -10s; /* 2.5s * 4 = 10s */
+
+}
+
+.fish:nth-child(6) {
+    left: -62.5%; /* -12.5% * 5 = -62.5% */
+    animation-delay: -12.5s; /* 2.5s * 5 = 12.5s */
+
+}
+
+.fish:nth-child(7) {
+    left: -75%; /* -12.5% * 6 = -75% */
+    animation-delay: -15s; /* 2.5s * 6 = 15s */
+
+}
+
+.fish:nth-child(8) {
+    left: -87.5%; /* -12.5% * 7 = -87.5% */
+    animation-delay: -17.5s; /* 2.5s * 7 = 17.5s */
+
+}
+
+@keyframes fishSwim {
+    0% {
+        left: -100%; /* Kalat alkavat ulkopuolelta näytön vasemmalta puolelta */
+    }
+    100% {
+        left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
+    }
+}
+
+
     .nav-links {
         display: none;
     }
@@ -719,7 +785,6 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
     }
 
     .footer-links {
