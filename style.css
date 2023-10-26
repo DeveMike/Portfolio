@@ -99,12 +99,6 @@ header {
       left: 100%; /* Kalat kulkevat näytön oikean reunan ohi */
     }
   }
-  
-  
-
-
-  
-
 
 
 nav {
@@ -215,8 +209,8 @@ nav {
 
 .sticky-container {
     position: fixed;
-    bottom: 20px; /* Voit säätää tarvittavaa sijaintia */
-    right: 20px; /* Voit säätää tarvittavaa sijaintia */
+    bottom: 20px;
+    right: 20px;
     background-color: #ff0000;
     padding: 10px;
     border-radius: 5px;
@@ -620,13 +614,13 @@ footer {
     }
 
       .coding-languages-wrapper {
-        padding: 0px; /* Pienennetty padding */
+        padding: 0px; 
         position: relative;
         top: 60px;
       }
       .coding-language {
-        width: 60px; /* Pienennetty leveys */
-        height: 50px; /* Pienennetty korkeus */
+        width: 60px;
+        height: 50px; 
         padding: 7px;
         margin: 10px;
       }
