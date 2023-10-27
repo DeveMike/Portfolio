@@ -645,7 +645,7 @@ footer {
   
 
   header {
-    height: 22%;
+    height: 24%;
   }
 
   .intro{
@@ -674,6 +674,32 @@ footer {
 
   }
 
+  .projects h2 {
+    font-size: 30px;
+  }
+  .project,
+  .project2,
+  .project3,
+  .project4 {
+   height: 200px;
+  }
+
+  .project .overlay h3{
+    font-size: 12px;
+  }
+  .project .overlay a img {
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+  .project .overlay p, .project2 .overlay p, .project3 .overlay p, .project4 .overlay p {
+    font-size: 10px;
+  }
+  .contact h2 {
+    font-size: 30px;
+}
   .footer-links{
     gap: 4em;
   }
