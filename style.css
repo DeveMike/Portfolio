@@ -236,12 +236,11 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-
 }
 
 .coding-language {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -642,9 +641,53 @@ footer {
     color: rgb(98, 225, 43);
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+
+  header {
+    height: 22%;
+  }
+
+  .intro{
+    height: 220vh;
+  }
+
+  .intro h1{
+    font-size: 1.5em;
+
+  }
+
+  .intro p{
+    font-size: 1.1em;
+  }
+
+  .coding-languages-wrapper {
+    margin-top: 2rem;
+  }
+  .coding-language {
+    width: 15%; /* Neljä elementtiä yhdelle riville */
+    flex-direction: column; /* Asetetaan sisällön suunta sarakkeeseen */
+  }
+  .coding-language img {
+    width: 70%; /* Asetetaan kuvan leveys 50%:iin */
+    height: auto;
+
+  }
+
+  .footer-links{
+    gap: 4em;
+  }
+
+
+}
+
+
+
+
+
 
 /* Tämä on puhelinversio */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)and (orientation: portrait) {
 
 
   .fish {
