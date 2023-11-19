@@ -170,7 +170,7 @@ nav {
 .logo-text {
     font-size: 1.5rem;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-image: url("pic/matrix.jpg");
