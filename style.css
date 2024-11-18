@@ -209,7 +209,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 
@@ -256,7 +256,8 @@ nav {
 }
 
 .coding-language img {
-  width: 100%;
+  width: 76%;
+  border-radius:40%;
 }
 /* .coding-language h3 {
   font-size: 1.5rem;
@@ -689,7 +690,7 @@ footer {
     flex-direction: column; /* Asetetaan sisällön suunta sarakkeeseen */
   }
   .coding-language img {
-    width: 70%; /* Asetetaan kuvan leveys 50%:iin */
+    width: 70%;
     height: auto;
 
   }
