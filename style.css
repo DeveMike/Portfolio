@@ -29,6 +29,7 @@ header {
 .wave-effect {
     position: fixed;
     overflow: hidden;
+    padding-bottom: 20px;
 
 }
   .wave-effect::after {
