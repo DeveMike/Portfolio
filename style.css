@@ -439,7 +439,24 @@ nav {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   }
 
-  .project2 .overlay p,
+  .project2 .overlay p {
+    color: #fff;
+    font-size: 17px;
+    padding: 3px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px 2px rgba(17, 180, 66, 0.8); /* Ensimmäinen vihreä hehku */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Animaatio */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 2px rgba(17, 180, 66, 0.8), 0 0 15px 5px rgba(255, 255, 255, 0.3); /* Vihreä ja valkoinen alku */
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(17, 180, 66, 0.8), 0 0 25px 8px rgba(255, 255, 255, 0.6); /* Vahvempi hehku valkoisella ja vihreällä */
+    }
+}
+
   .project3 .overlay p,
   .project4 .overlay p {
     color: #fff;
@@ -456,9 +473,24 @@ nav {
   .project3 .overlay a{
     text-decoration: none;
     color: #11b442;
+    background-color: #f9f9f9;
     font-size: 25px;
     font-weight: bold;
-  }
+    padding: 10px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px 2px rgba(17, 180, 66, 0.8); /* Ensimmäinen vihreä hehku */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Animaatio */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 2px rgba(17, 180, 66, 0.8), 0 0 15px 5px rgba(255, 255, 255, 0.3); /* Vihreä ja valkoinen alku */
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(17, 180, 66, 0.8), 0 0 25px 8px rgba(255, 255, 255, 0.6); /* Vahvempi hehku valkoisella ja vihreällä */
+    }
+}
+  
   
   .project4 .overlay {
     display: flex;
